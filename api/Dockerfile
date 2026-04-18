@@ -2,6 +2,8 @@
 
 FROM node:16-alpine
 
+RUN npm i -g nodemon
+
 WORKDIR /app
 
 COPY package.json .
@@ -12,4 +14,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["node", "app.js"]
+CMD ["npm", "run", "dev"]
