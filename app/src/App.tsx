@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 function App() {
     const [blogs, setBlogs] = useState<any>([]);
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("http://localhost:4000/")
             .then((res) => res.json())
             .then((data) => setBlogs(data));
     }, []);
