@@ -1,12 +1,13 @@
-FROM node:17-alpine
+## comments are epic
 
-WORKDIR /app
+FROM node:25-alpine3.22
+
+WORKDIR /api
 
 COPY . .
 
 RUN npm install
 
 EXPOSE 4000
-# required for docker desktop port mapping
 
 CMD ["node", "app.js"]
