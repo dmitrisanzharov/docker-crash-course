@@ -4,9 +4,11 @@ FROM node:25-alpine3.22
 
 WORKDIR /api
 
-COPY . .
+COPY package.json .
 
 RUN npm install
+
+COPY . .
 
 EXPOSE 4000
 
