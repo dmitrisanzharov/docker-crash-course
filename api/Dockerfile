@@ -2,9 +2,11 @@
 
 FROM node:25-alpine3.22
 
+RUN npm i -g nodemon
+
 WORKDIR /api
 
-COPY package.json .
+COPY package*.json .
 
 RUN npm install
 
@@ -12,4 +14,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["node", "app.js"]
+CMD ["npm", "run", "dev"]
