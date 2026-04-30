@@ -2,15 +2,15 @@
 
 FROM node:25-alpine3.22
 
-RUN npm i -g nodemon
-
 WORKDIR /api
 
 COPY package*.json .
 
-RUN npm install
+RUN npm i -g nodemon
 
 COPY . .
+
+RUN npm install
 
 EXPOSE 4000
 
