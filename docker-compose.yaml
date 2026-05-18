@@ -10,5 +10,16 @@ services:
       - './api:/api'
       - 'vol_node_modules:/api/node_modules'
 
+  app:
+    build: './app'
+    container_name: 'app_c1'
+    ports: 
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+    # volumes:
+    #   - './app:/app'
+    #   - 'vol_node_modules:/app/node_modules'
+
 volumes:
   vol_node_modules:
