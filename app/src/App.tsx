@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>all blogs, oh yes</h1>
+                <h1>all blogs, oh yes... change.. its working?</h1>
                 <ul>
                   {!blogs && <p>Loading...</p>}
                     {blogs &&
