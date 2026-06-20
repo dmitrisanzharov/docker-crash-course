@@ -2,7 +2,7 @@
 
 FROM node:26-alpine3.23
 
-WORKDIR /app
+WORKDIR /api
 
 COPY package*.json .
 
