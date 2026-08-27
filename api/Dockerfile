@@ -1,3 +1,5 @@
+# my comment
+
 FROM node:26-bullseye
 
 WORKDIR /api
@@ -8,6 +10,6 @@ RUN npm i
 
 COPY . .
 
-EXPOSE 4040
+EXPOSE 4000
 
 CMD ["npm", "run", "dev"]
