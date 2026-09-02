@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.json([
     {
       "id":"1",
-      "title":"Book Review: The Bear & The Nightingale...27-Aug-2026...omg it worked =P =)  ..."
+      "title":"Book Review: The Bear & The Nightingale... omg it worked =) "
     },
     {
       "id":"2",

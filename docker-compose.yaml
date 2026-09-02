@@ -13,12 +13,21 @@ services:
     api2:
         build: './api2'
         container_name: 'api2'
-        ports: 
+        ports:
             - '5000:5000'
         volumes:
             - './api2:/api'
             - 'api2_node_mods:/api/node_modules'
 
+    app:
+        build: './app'
+        container_name: 'app'
+        ports:
+            - '3000:3000'
+        volumes:
+            - './app:/app'
+            - 'app_node_mods:/app/node_modules'
 
 volumes:
     api2_node_mods:
+    app_node_mods:
